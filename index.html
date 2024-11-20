@@ -1,268 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart City Environmental Monitoring System</title>
-     <!-- Google Web Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
- 
-     <!-- Icon Font Stylesheet -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
- 
-     <!-- Libraries Stylesheet -->
-     <link href="lib/animate/animate.min.css" rel="stylesheet">
-     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
- 
-     <!-- Customized Bootstrap Stylesheet -->
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
-    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styles.css">
-<!--
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!-- https://fontawesome.com/-->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="slick/slick.min.css" />
+    <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--
     
 TemplateMo 555 Upright
 
 https://templatemo.com/tm-555-upright
 
 -->
-</head>
-<body>    
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <!-- Leftside bar -->
-            <div id="tm-sidebar" class="tm-sidebar"> 
-                <nav class="tm-nav">
-                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div>
-                        <div class="tm-brand-box">
-                            <h1 class="tm-brand">CS4366</h1>
-                        </div>                
-                        <ul id="tm-main-nav">
-                            <li class="nav-item">                                
-                                <a href="#overview" class="nav-link current">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-info-circle nav-icon"></i>
-                                    Overview
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#members" class="nav-link">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-users nav-icon"></i>
-                                    Members
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#schedule" class="nav-link">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-calendar-alt nav-icon"></i>
-                                    Schedule
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#activities" class="nav-link">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-tasks nav-icon"></i>
-                                    Activities
-                                </a>
+      <div class="row">
+        <!-- Leftside bar -->
+        <div id="tm-sidebar" class="tm-sidebar">
+          <nav class="tm-nav">
+            <button
+              class="navbar-toggler"
+              type="button"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div>
+              <div class="tm-brand-box">
+                <h1 class="tm-brand">CS4366</h1>
+              </div>
+              <ul id="tm-main-nav">
+                <li class="nav-item">
+                  <a href="#overview" class="nav-link current">
+                    <div class="triangle-right"></div>
+                    <i class="fas fa-info-circle nav-icon"></i>
+                    Overview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#members" class="nav-link">
+                    <div class="triangle-right"></div>
+                    <i class="fas fa-users nav-icon"></i>
+                    Members
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#schedule" class="nav-link">
+                    <div class="triangle-right"></div>
+                    <i class="fas fa-calendar-alt nav-icon"></i>
+                    Schedule
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#installation" class="nav-link">
+                    <div class="triangle-right"></div>
+                    <i class="fas fa-tools nav-icon"></i>
+                    Installation
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#manual" class="nav-link">
+                    <div class="triangle-right"></div>
+                    <i class="fas fa-book-open nav-icon"></i>
+                    Manual
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#activities" class="nav-link">
+                    <div class="triangle-right"></div>
+                    <i class="fas fa-tasks nav-icon"></i>
+                    Activities
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="tm-main">
+          <!-- overview section -->
+          <div class="tm-section-wrap">
+            <section id="overview" class="tm-section">
+              <h1 class="tm-text-primary">Chicken Noodle Soup</h1>
+              <h2 class="tm-text-primary mt-5">
+                Welcome to Smart City Environmental Monitoring System
+              </h2>
+              <hr class="mb-5" />
+              <div class="row">
+                <div class="mb-4">
+                  <div class="tm-text-container">
+                    <div class="tm-icon-container mb-5 mr-0 ml-auto">
+                      <i
+                        class="fas fa-satellite-dish fa-4x tm-text-primary"
+                      ></i>
+                    </div>
+                    <p>
+                      The Smart City Environmental Monitoring System is a
+                      web-based application that leverages IoT sensors to gather
+                      and analyze real-time data on air quality, temperature,
+                      humidity, wind speed, pressure and weather condition
+                      across the city. The system features an interactive
+                      dashboard for data visualization, custom alerts for
+                      abnormal conditions, and predictive analytics for
+                      forecasting environmental trends. Additionally, citizens
+                      can report environmental issues, contributing to a
+                      collaborative effort in ensuring urban environmental
+                      health. The platform is designed for scalability,
+                      security, and high performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr class="tm-hr-short mb-5" />
+              <div class="row tm-row-home">
+                <div class="tm-col-home tm-col-home-l">
+                  <div class="media mb-4">
+                    <div class="media-body">
+                      <i
+                        class="fas fa-scroll fa-4x tm-post-icon tm-text-primary"
+                      ></i>
+                      <p class="d-block mb-2 tm-text-primary tm-post-link">
+                        Purpose
+                      </p>
+                      <p>
+                        The Smart City Environmental Monitoring System has been
+                        developed to analyze environmental data such as aair
+                        quality, temperature, humidity, wind speed, pressure in
+                        real time. This system aims to help city planners and
+                        the citizens with issues related to monitoring
+                        environmental health and enable incitive prompt actions
+                        on raising concerns or taking up relevant actions over
+                        environmental issues.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media mb-4">
+                    <div class="media-body">
+                      <p class="d-block mb-2 tm-text-primary tm-post-link">
+                        Scope
+                      </p>
+                      <p>
+                        The system will gather information through a distributed
+                        IoT sensor network and then a cloud-based processing and
+                        visualization through a webpage dashboard, followed by
+                        forecasting the trends by using the historical data. It
+                        will be a custom alerts and citizen issues reporting
+                        system.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- members section -->
+          <div class="tm-section-wrap">
+            <section id="members" class="tm-section">
+              <h2 class="tm-text-primary">Group Members</h2>
+              <hr class="mb-5" />
+              <div class="tm-carousel">
+                <div class="tm-carousel-item">
+                  <figure class="mb-4">
+                    <img src="img/person1.jpg" alt="Featured Item" />
+                  </figure>
+                  <div class="tm-about-text">
+                    <h3 class="mb-3 tm-text-primary tm-about-title">
+                      Ayobami <br />
+                      Ajala
+                    </h3>
+                    <h4 class="tm-text-secondary tm-about-subtitle">
+                      Backend <br />
+                      Developer
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="tm-carousel-item">
+                  <figure class="mb-4">
+                    <img src="img/person2.png" alt="Featured Item" />
+                  </figure>
+                  <div class="tm-about-text">
+                    <h3 class="mb-3 tm-text-primary tm-about-title">
+                      Kamsiyochukwu Uwah
+                    </h3>
+                    <h4 class="tm-text-secondary tm-about-subtitle">
+                      Frontend Developer
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="tm-carousel-item">
+                  <figure class="mb-4">
+                    <img src="img/person3.png" alt="Featured Item" />
+                  </figure>
+                  <div class="tm-about-text">
+                    <h3 class="mb-3 tm-text-primary tm-about-title">
+                      Oluwabukunmi Dedenuola
+                    </h3>
+                    <h4 class="tm-text-secondary tm-about-subtitle">
+                      API Integration Developer
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="tm-carousel-item">
+                  <figure class="mb-4">
+                    <img src="img/person4.jpg" alt="Featured Item" />
+                  </figure>
+                  <div class="tm-about-text">
+                    <h3 class="mb-3 tm-text-primary tm-about-title">
+                      Eworitse Mabuyaku
+                    </h3>
+                    <h4 class="tm-text-secondary tm-about-subtitle">
+                      Data and Machine Learning Developer
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- schedule section -->
+          <div class="tm-section-wrap">
+            <div id="schedule" class="tm-section">
+              <h2 class="tm-text-primary">Meeting Schedules</h2>
+              <hr class="mb-5" />
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div class="row g-5">
+                    <div
+                      class="col-lg-6 wow fadeInUp"
+                      data-wow-delay="0.1s"
+                      style="min-height: 400px"
+                    >
+                      <div class="position-relative h-100">
+                        <img
+                          class="img-fluid position-absolute w-100 h-100"
+                          src="img/meeting.jpg"
+                          alt=""
+                          style="object-fit: cover"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <h1 class="mb-4 mt-4">Weekly Meetings</h1>
+                      <p class="mb-4">
+                        Our team meets every Monday, Wednesday, and Friday from
+                        5 PM to 7 PM to discuss progress, address challenges,
+                        and plan upcoming tasks. These meetings ensure effective
+                        collaboration and keep the project on track.
+                      </p>
+                      <a
+                        class="btn btn-primary py-3 px-5 mt-2"
+                        href="https://meet.google.com/jzx-xymy-ran"
+                        >Join Meeting?</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tm-section-wrap">
+            <section id="installation" class="tm-section">
+                <h2 class="tm-text-primary">Installation Guide</h2>
+                <hr class="mb-5">
+                <p>This guide provides step-by-step instructions to set up the Smart City Monitoring System for both the backend and frontend. Follow these steps to install the necessary components and dependencies.</p>
+                <h3>Prerequisites</h3>
+                <p>Before starting, ensure the following software is installed on your machine:</p>
+                <ul>
+                    <li>Python (version 3.7 or later)</li>
+                    <li>Node.js (version 14 or later)</li>
+                    <li>MongoDB Compass (for database management)</li>
+                </ul>
+        
+                <h3>Backend Installation (Python)</h3>
+                <ol>
+                    <li>
+                        <strong>Install Python:</strong>
+                        <ul>
+                            <li>Download and install Python from the official website: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>.</li>
+                            <li>Verify the installation by running in terminal:
+                                <pre><code>python --version</code></pre>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <strong>Navigate to the Backend Directory:</strong>
+                        <ul>
+                            <li>Open the main project directory, named <em>smart city monitoring</em>.</li>
+                            <li>Inside, find the folder named <em>backend</em>. This folder contains all the code related to the backend.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Install Dependencies:</strong>
+                        <ul>
+                            <li>In the backend folder, locate the file named <em>requirements.txt</em>. This file contains a list of all necessary packages.</li>
+                            <li>Open a terminal in this directory and run the following command to install the dependencies:
+                                <pre><code>pip install -r requirements.txt</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Database Configuration:</strong>
+                        <ul>
+                            <li>Ensure MongoDB is installed and running on your machine.</li>
+                            <li>Configure your MongoDB connection string in the backend configuration files as needed for the project.</li>
+                        </ul>
+                    </li>
+                </ol>
+        
+                <h3>Frontend Installation (React)</h3>
+                <ol>
+                    <li>
+                        <strong>Install Node.js:</strong>
+                        <ul>
+                            <li>Download and install Node.js from <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a>.</li>
+                            <li>Verify the installation by running:
+                                <pre><code>node --version</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Install MongoDB Compass:</strong>
+                        <ul>
+                            <li>Download and install MongoDB Compass from <a href="https://www.mongodb.com/products/compass" target="_blank">https://www.mongodb.com/products/compass</a>.</li>
+                            <li>MongoDB Compass allows you to manage the database for the application and visualize data stored.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Install Frontend Dependencies:</strong>
+                        <ul>
+                            <li>In the main project directory, open a terminal and run:
+                                <pre><code>npm install</code></pre>
+                            </li>
+                            <li>This command installs all packages necessary to run the frontend of the application.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+        </div>
+        
+
+        <div class="tm-section-wrap">
+            <section id="manual" class="tm-section">
+                <h2 class="tm-text-primary">User Manual</h2>
+                <hr class="mb-5" />
+                <p>This manual provides instructions to start the Smart City Monitoring System application, covering the key features and functionality.</p>
+        
+                <h3>Starting the Application</h3>
+                <ol>
+                    <li>
+                        <strong>Starting the Backend:</strong>
+                        <ul>
+                            <li>In the main project directory, navigate to the backend folder.</li>
+                            <li>Open the backend directory in Visual Studio Code.</li>
+                            <li>Open a terminal in VS Code and run the following command to start the backend server:
+                                <pre><code>python app2.py</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Starting the Frontend Server:</strong>
+                        <ul>
+                            <li>In the main project directory, open a terminal in VS Code.</li>
+                            <li>Navigate to the server directory by running:
+                                <pre><code>cd server</code></pre>
+                            </li>
+                            <li>Run the following command to connect the frontend server with MongoDB:
+                                <pre><code>node server.js</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Starting the Frontend Application:</strong>
+                        <ul>
+                            <li>In the main project directory, open a new terminal and run:
+                                <pre><code>npm start</code></pre>
+                            </li>
+                            <li>This command starts the frontend of the application on the URL <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Accessing the Application:</strong>
+                        <ul>
+                            <li>Open a web browser and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to access the landing page of the application.</li>
+                        </ul>
+                    </li>
+                </ol>
+        
+                <h3>Application Features</h3>
+                <ol>
+                    <li>
+                        <strong>Signup and Login:</strong>
+                        <ul>
+                            <li>On the landing page, there are options to Sign Up or Log In.</li>
+                            <li><strong>Sign Up:</strong> Users create an account by entering their credentials.</li>
+                            <li><strong>Log In:</strong> Users verify their credentials to access the main dashboard.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Dashboard:</strong>
+                        <ul>
+                            <li>Once logged in, users are directed to the Dashboard, where they can view:</li>
+                            <li>Current Weather Conditions: Temperature, humidity, pressure, wind speed, and air quality index.</li>
+                            <li>24-Hour Data Graphs: Graphs showing weather trends over the past 24 hours.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Predictive Analysis:</strong>
+                        <ul>
+                            <li>In this section, users can view predicted weather conditions for the next 24 hours displayed in graphical form.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Alerts:</strong>
+                        <ul>
+                            <li>Users can access alerts for any harsh weather conditions.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Report an Issue:</strong>
+                        <ul>
+                            <li>In this section, users can report issues related to weather by sending an email directly to an environmental agency.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>About Us:</strong>
+                        <ul>
+                            <li>This section provides information about the project and its purpose.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Settings:</strong>
+                        <ul>
+                            <li><strong>Profile Settings:</strong> Users can update their profile information.</li>
+                            <li><strong>Alert Settings:</strong> Users can set threshold values for receiving alerts about specific weather conditions.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Logout:</strong>
+                        <ul>
+                            <li>The Logout button allows users to securely exit the application.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>This manual should help users set up and navigate the application’s features efficiently. For further assistance, refer to additional documentation on the project website.</p>
+            </section>
+        </div>
+        
+
+          <!-- activities section -->
+          <div class="tm-section-wrap">
+            <div id="activities" class="tm-section">
+              <h2 class="tm-text-primary">Activities</h2>
+              <hr class="mb-5" />
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div class="row g-5">
+                    <div
+                      class="col-lg-6 wow fadeInUp"
+                      data-wow-delay="0.1s"
+                      style="min-height: 400px"
+                    >
+                      <div class="position-relative h-100">
+                        <img
+                          class="img-fluid position-absolute w-100 h-100"
+                          src="img/jira.png"
+                          alt=""
+                          style="object-fit: cover"
+                        />
+                      </div>
                     </div>
-                </nav>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <h1 class="mb-4 mt-4">Activities on JIRA</h1>
+                      <p class="mb-4">
+                        All project activities, tasks, and progress are managed
+                        through JIRA. This includes task assignments, progress
+                        tracking, deadlines, and team collaborations, ensuring
+                        streamlined development and timely project delivery.
+                      </p>
+                      <a
+                        class="btn btn-primary py-3 px-5 mt-2"
+                        href="https://cs4366-chicken-noodle-soup.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiMGQwYTI3YjNlNTk0NGNlMTljODI0ZjhlOWUzNGQwYzYiLCJwIjoiaiJ9"
+                      >
+                        Go to Jira</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <div class="tm-main">
-                <!-- overview section -->
-                <div class="tm-section-wrap">                
-                    <section id="overview" class="tm-section">
-                        <h1 class="tm-text-primary">Chicken Noodle Soup</h1>
-                        <h2 class="tm-text-primary mt-5">Welcome to Smart City Environmental Monitoring System</h2>
-                        <hr class="mb-5">
-                        <div class="row">
-                            <div class="mb-4">
-                                <div class="tm-text-container">
-                                    <div class="tm-icon-container mb-5 mr-0 ml-auto">
-                                        <i class="fas fa-satellite-dish fa-4x tm-text-primary"></i>
-                                    </div>                                
-                                    <p>
-                                        The Smart City Environmental Monitoring System is a web-based 
-                                        application that leverages IoT sensors to gather and analyze 
-                                        real-time data on air quality, noise levels, temperature, 
-                                        humidity, and pollution across the city. The system features 
-                                        an interactive dashboard for data visualization, custom alerts 
-                                        for abnormal conditions, and predictive analytics for forecasting 
-                                        environmental trends. Additionally, citizens can report environmental 
-                                        issues, contributing to a collaborative effort in ensuring urban environmental 
-                                        health. The platform is designed for scalability, security, and high performance.
-                                    </p>
-                                </div>                                
-                            </div>
-                        </div>
-                        <hr class="tm-hr-short mb-5">
-                        <div class="row tm-row-home">                            
-                            <div class="tm-col-home tm-col-home-l">
-                                <div class="media mb-4">
-                                    <div class="media-body">
-                                        <i class="fas fa-scroll fa-4x tm-post-icon tm-text-primary"></i>
-                                        <p class="d-block mb-2 tm-text-primary tm-post-link">Purpose</p>  
-                                        <p>
-                                            The Smart City Environmental Monitoring System has been developed to analyze environmental data 
-                                            such as air quality, noise levels, temperature, humidity, and pollution in real time. This system 
-                                            aims to help city planners and the citizens with issues related to monitoring environmental health 
-                                            and enable incitive prompt actions on raising concerns or taking up relevant actions over environmental issues. </p>
-                                    </div>                                    
-                                </div>
-                                <div class="media mb-4">
-                                    <div class="media-body">
-                                        <p class="d-block mb-2 tm-text-primary tm-post-link">Scope</p>  
-                                        <p>
-                                            The system will gather information through a distributed IoT sensor network and then a cloud-based processing 
-                                            and visualization through a webpage dashboard, followed by forecasting the trends by using the historical data. 
-                                            It will be a custom alerts and citizen issues reporting system.
-                                        </p>
-                                    </div>                                    
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- members section -->
-                <div class="tm-section-wrap">
-                    <section id="members" class="tm-section">
-                        <h2 class="tm-text-primary">Group Members</h2>
-                        <hr class="mb-5">
-                            <div class="tm-carousel">
-                                <div class="tm-carousel-item">
-                                    <figure class="mb-4">
-                                        <img src="img/person1.jpg" alt="Featured Item">
-                                    </figure>
-                                    <div class="tm-about-text">
-                                        <h3 class="mb-3 tm-text-primary tm-about-title">Ayobami <br> Ajala</h3>
-                                        <h4 class="tm-text-secondary tm-about-subtitle">Backend <br> Developer</h4>
-                                    </div>
-                                </div>
-                                
-                                <div class="tm-carousel-item">
-                                    <figure class="mb-4">
-                                        <img src="img/person3.png" alt="Featured Item">
-                                    </figure>
-                                    <div class="tm-about-text">
-                                        <h3 class="mb-3 tm-text-primary tm-about-title">Oluwabukunmi Dedenuola</h3>
-                                        <h4 class="tm-text-secondary tm-about-subtitle">Frontend  Developer</h4>
-                                    </div>
-                                </div>
-
-                                <div class="tm-carousel-item">
-                                    <figure class="mb-4">
-                                        <img src="img/person2.png" alt="Featured Item">
-                                    </figure>
-                                    <div class="tm-about-text">
-                                        <h3 class="mb-3 tm-text-primary tm-about-title">Kamsiyochukwu Uwah</h3>
-                                        <h4 class="tm-text-secondary tm-about-subtitle">Project Manager & Data Scientist</h4>                                    
-                                    </div>
-                                </div>
-
-                                <div class="tm-carousel-item">
-                                    <figure class="mb-4">
-                                        <img src="img/person4.jpg" alt="Featured Item">
-                                    </figure>
-                                    <div class="tm-about-text">
-                                        <h3 class="mb-3 tm-text-primary tm-about-title">Eworitse Mabuyaku</h3>
-                                        <h4 class="tm-text-secondary tm-about-subtitle">DevOps Engineer & Quality Assurance</h4>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-                </div>
-
-                <!-- schedule section -->
-                <div class="tm-section-wrap">
-                    <div id="schedule" class="tm-section">
-                        <h2 class="tm-text-primary">Meeting Schedules</h2>
-                        <hr class="mb-5">
-                        <div class="container-xxl py-5">
-                            <div class="container">
-                                <div class="row g-5">
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                                        <div class="position-relative h-100">
-                                            <img class="img-fluid position-absolute w-100 h-100" src="img/meeting.jpg" alt="" style="object-fit: cover;">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                                        <h1 class="mb-4 mt-4">Weekly Meetings</h1>
-                                        <p class="mb-4">Our team meets every Monday, Wednesday, and Friday from 5 PM to 7 PM to discuss progress, 
-                                            address challenges, and plan upcoming tasks. These meetings ensure effective collaboration and keep 
-                                            the project on track.</p>
-                                        <a class="btn btn-primary py-3 px-5 mt-2" href="https://meet.google.com/jzx-xymy-ran">Join Meeting?</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                                <!-- activities section -->
-                                <div class="tm-section-wrap">
-                                    <div id="activities" class="tm-section">
-                                        <h2 class="tm-text-primary">Activities</h2>
-                                        <hr class="mb-5">
-                                        <div class="container-xxl py-5">
-                                            <div class="container">
-                                                <div class="row g-5">
-                                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                                                        <div class="position-relative h-100">
-                                                            <img class="img-fluid position-absolute w-100 h-100" src="img/jira.png" alt="" style="object-fit: cover;">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                                                        <h1 class="mb-4 mt-4">Activities on JIRA</h1>
-                                                        <p class="mb-4">All project activities, tasks, and progress are managed through JIRA. This includes task 
-                                                            assignments, progress tracking, deadlines, and team collaborations, ensuring streamlined development 
-                                                            and timely project delivery.</p>
-                                                        <a class="btn btn-primary py-3 px-5 mt-2" href="https://cs4366-chicken-noodle-soup.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiMGQwYTI3YjNlNTk0NGNlMTljODI0ZjhlOWUzNGQwYzYiLCJwIjoiaiJ9">
-                                                            Go to Jira</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h2 class="tm-text-primary">Upcoming activities</h2>
-                                    <hr class="mb-5">
-                                    <section class="activities">
-                                        <div class="container">
-                                            <ul>
-                                                <li><strong>Frontend and Backend Integration Sessions</strong></li>
-                                                <li><strong>API Testing and Debugging</strong></li>
-                                                <li><strong>Data Analysis and Prediction Model Review</strong></li>
-                                                <li><strong>Code Review and Collaboration</strong></li>
-                                                <li><strong>System Performance Testing</strong></li>
-                                                <li><strong>Final System Testing & User Feedback</strong></li>
-                                            </ul>
-                                        </div>
-                                    </section>
-                                </div>              
-            </div> <!-- .tm-main -->                      
-        </div> <!-- .row -->
-    </div> <!-- .container-fluid -->
-    <script src="js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
-    <script src="js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
-    <script src="js/parallax/parallax.min.js"></script>     <!-- https://pixelcog.github.io/parallax.js/ -->
-    <script src="js/imagesloaded.pkgd.min.js"></script>     <!-- https://imagesloaded.desandro.com/ -->
-    <script src="js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
-    <script src="js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
-    <script src="slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
+            <h2 class="tm-text-primary">Upcoming activities</h2>
+            <hr class="mb-5" />
+            <section class="activities">
+              <div class="container">
+                <ul>
+                  <li><strong>Final System Testing & User Feedback</strong></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- .tm-main -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- https://jquery.com/ -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- https://github.com/ChrisWojcik/single-page-nav -->
+    <script src="js/parallax/parallax.min.js"></script>
+    <!-- https://pixelcog.github.io/parallax.js/ -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- https://imagesloaded.desandro.com/ -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- https://isotope.metafizzy.co/ -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <script src="slick/slick.min.js"></script>
+    <!-- https://kenwheeler.github.io/slick/ -->
     <script src="js/templatemo-script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
